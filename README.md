@@ -25,6 +25,10 @@ Validate if a key is being written
  
 # Changelog
 
+## 1.0.2
+
+- Fix new wercker environment (avoiding chown issues)
+
 ## 1.0.1
 
 - Added host parameter, to set keys only for certain hosts
