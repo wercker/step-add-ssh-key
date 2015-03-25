@@ -20,7 +20,7 @@ main() {
   echo -e "$private_key" > $ssh_key_path
 
   # Add for current user if that isn't root
-  [[ `id -u` -ne 0 ]] && $WERCKER_STEP_ROOT/addKey.sh $HOME $USER $ssh_key_path $WERCKER_ADD_SSH_KEY_HOST
+  [[ $(id -u) -ne 0 ]] && $WERCKER_STEP_ROOT/addKey.sh $HOME $USER $ssh_key_path $WERCKER_ADD_SSH_KEY_HOST
 
   # Also add it for root
   sudo $WERCKER_STEP_ROOT/addKey.sh /root root $ssh_key_path $WERCKER_ADD_SSH_KEY_HOST
