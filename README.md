@@ -7,7 +7,8 @@ and add them to the SSH configuration.
 
 # Options
 
-- `keyname` The name of the key variable to export, this is without the dollar sign prefix and without the `_PUBLIC` or `_PRIVATE` suffix.
+- `keyname` The name of the key variable to export, this is without the dollar
+sign prefix and without the `_PUBLIC` or `_PRIVATE` suffix.
 - `host` The value for setting keys only for certain hosts
 
 # Example
@@ -22,8 +23,12 @@ build:
 # What's new
 
 Validate if a key is being written
- 
+
 # Changelog
+
+## 1.0.3
+
+- Fix properties section in wercker-step.yml
 
 ## 1.0.2
 
