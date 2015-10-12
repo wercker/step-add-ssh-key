@@ -1,3 +1,5 @@
+[![wercker status](https://app.wercker.com/status/87c813e77723269d9c2619e500526b6e/s "wercker status")](https://app.wercker.com/project/bykey/87c813e77723269d9c2619e500526b6e)
+
 # Step add-ssh-key
 
 Wercker allows you to generate SSH keys and expose them as via
