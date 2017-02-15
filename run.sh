@@ -23,7 +23,7 @@ main() {
   [[ $(id -u) -ne 0 ]] && $WERCKER_STEP_ROOT/addKey.sh $HOME $USER $ssh_key_path $WERCKER_ADD_SSH_KEY_HOST
 
   # Also add it for root
-  sudo $WERCKER_STEP_ROOT/addKey.sh /root root $ssh_key_path $WERCKER_ADD_SSH_KEY_HOST
+  sudo /bin/sh $WERCKER_STEP_ROOT/addKey.sh /root root $ssh_key_path $WERCKER_ADD_SSH_KEY_HOST
 }
 
 main;
