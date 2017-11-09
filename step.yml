@@ -1,14 +1,17 @@
 name: add-ssh-key
-version: 1.0.3
-description: |
+version: 1.1.0
+summary: |
   Wercker allows you to generate SSH keys and expose them as via
   environment variables to your build or deployment pipeline.
   This step can be used to write these values to an EdentityFile
   and add them to the SSH configuration.
+tags:
+- ssh
+- key
 properties:
-  keyname:
-    type: string
-    required: true
-  host:
-    type: string
-    required: false
+- name: keyname
+  type: string
+  required: true
+- name: host
+  type: string
+  required: false
