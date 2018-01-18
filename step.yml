@@ -1,5 +1,5 @@
 name: add-ssh-key
-version: 1.1.0
+version: 1.1.1
 summary: |
   Wercker allows you to generate SSH keys and expose them as via
   environment variables to your build or deployment pipeline.
