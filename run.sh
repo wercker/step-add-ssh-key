@@ -4,7 +4,17 @@ validate_key() {
   local private_key=$1;
 
   if [ -z "$private_key" ]; then
-    fail "Private key not found. Do not prepend the keyname with a dollar sign and do not use _PRIVATE at the end.";
+    if [ "${#WERCKER_ADD_SSH_KEY_KEYNAME}" -eq 0 ] ; then
+      message="Private key not found. The keyname was blank, may indicate dollar sign prepended to the keyname."
+    else
+      tmp=`echo "$WERCKER_ADD_SSH_KEY_KEYNAME" | sed -e 's/_PRIVATE$//'`
+      if [ "$tmp" != "$WERCKER_ADD_SSH_KEY_KEYNAME" ] ; then
+        message="Private key not found. The keyname should not have _PRIVATE at the end."
+      else
+        message="Private key not found. Be sure to create an environment variable named ${WERCKER_ADD_SSH_KEY_KEYNAME}_PRIVATE (X_${WERCKER_ADD_SSH_KEY_KEYNAME}_PRIVATE if using the CLI) containing the SSH private key."
+      fi
+    fi
+    fail "$message"
   fi
 }
 
