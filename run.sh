@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 validate_key() {
   local private_key=$1;

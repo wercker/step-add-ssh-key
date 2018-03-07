@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if [ ! -d "$1/.ssh" ]; then
    mkdir -p "$1/.ssh"
