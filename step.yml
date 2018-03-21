@@ -3,7 +3,7 @@ version: 1.1.2
 summary: |
   Wercker allows you to generate SSH keys and expose them as via
   environment variables to your build or deployment pipeline.
-  This step can be used to write these values to an EdentityFile
+  This step can be used to write these values to an IdentityFile
   and add them to the SSH configuration.
 tags:
 - ssh
