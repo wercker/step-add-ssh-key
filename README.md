@@ -60,4 +60,8 @@ Validate if a key is being written
 
 The MIT License (MIT)
 
-Copyright (c) 2013 wercker
+Copyright (c) 2013, 2018 Oracle Corporation and/or its affiliates. All rights reserved.
+
+## Contributing to this repository 
+
+Oracle welcomes contributions to this repository from anyone.  Please see [CONTRIBUTING](CONTRIBUTING.md) for more information. 
